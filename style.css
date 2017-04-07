@@ -1,0 +1,51 @@
+#real-bkg {
+    background-image: url(blue-color-gradient-wallpaper-1.jpg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    display: inline;
+    position: absolute;
+}
+
+#bkgForMove {
+    left: 4000px;
+    background-image: url(blue1.jpg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+
+.bkgForMove {
+    animation: backgroundCome 5s 1 linear forwards;
+}
+
+@keyframes backgroundCome {
+    0% {
+        transform: translate(1000px, 0);
+    }
+    25% {
+        transform: translate(700px, 0);
+    }
+    50% {
+        transform: translate(400px, 0);
+    }
+    75% {
+        transform: translate(100px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+    /*    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    to{ 
+        transform: scale(1,-1);
+    }
+*/
+}
